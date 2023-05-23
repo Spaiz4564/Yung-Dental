@@ -1,0 +1,33 @@
+.form-section {
+  background-color: $clr8;
+  .form-container {
+    padding: 80px 0px;
+    max-width: 600px;
+    margin: 80px auto 0px auto;
+    h4 {
+      font-size: rem(27px);
+      margin-bottom: 20px;
+      color: $clr3;
+    }
+    form {
+      textarea {
+        margin-bottom: 20px;
+        height: 108px;
+        padding: 11px;
+        &::placeholder {
+          font-family: 'Lato';
+        }
+      }
+      input {
+        &::placeholder {
+          color: #767778;
+          font-weight: 200;
+        }
+        padding: 11px;
+        margin-bottom: 10px;
+      }
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

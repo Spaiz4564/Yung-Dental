@@ -10,6 +10,7 @@ import Root from './pages/Root'
 import AboutPage from './pages/AboutPage'
 import OfficePage from './pages/OfficePage'
 import ServicePage from './pages/ServicePage'
+import ContactPage from './pages/ContactPage'
 
 const router = createHashRouter([
   {
@@ -20,6 +21,7 @@ const router = createHashRouter([
       { path: 'about', element: <AboutPage /> },
       { path: 'office', element: <OfficePage /> },
       { path: 'services', element: <ServicePage /> },
+      { path: 'contact', element: <ContactPage /> },
     ],
   },
 ])
