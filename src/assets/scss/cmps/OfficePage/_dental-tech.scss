@@ -1,0 +1,28 @@
+.dental-tech-section {
+    margin-bottom: 150px;
+  .dental-tech-container {
+    text-align: center;
+    h1,p{
+        color: $clr1;
+    }
+    display: flex;
+    .dental {
+      background-color: $clr2;
+      width: 33.333%;
+      padding: 6.5%;
+    }
+
+    .tech {
+      padding: 6.5%;
+      background-color: $clr2;
+      width: 33.333%;
+    }
+
+    .dental-img {
+      width: 33.333%;
+      background-image: url('../../../img/OfficeETC/office2.webp');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

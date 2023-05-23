@@ -1,0 +1,36 @@
+.we-guide-section {
+  position: relative;
+  margin-bottom: 150px;
+  .we-guide-container {
+    p,
+    h2 {
+      color: $clr1;
+    }
+
+    h1 {
+      color: $clr1;
+      font-size: rem(45px);
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    min-height: 60vh;
+    text-align: center;
+  }
+  .we-guide-background {
+    background-attachment: fixed;
+    background-image: url('https://ik.imagekit.io/tfcgjzp4c/Yung_Dental_imgs/About/about1.webp?updatedAt=1684407573296');
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    filter: brightness(0.36);
+  }
+  .office-filter {
+    filter: brightness(0.6);
+  }
+}

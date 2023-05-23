@@ -1,0 +1,15 @@
+.our-mission-section {
+  background-color: $clr2;
+  .our-mission-container {
+    max-width: 963px;
+    margin: auto;
+    margin-bottom: 150px;
+    padding: 80px 0px;
+    text-align: center;
+
+    h1,
+    p {
+      color: $clr1;
+    }
+  }
+}

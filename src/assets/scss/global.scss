@@ -1,0 +1,31 @@
+// Setup
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/functions';
+
+// Basics
+@import 'basics/helpers';
+@import 'basics/base';
+
+// CMPS
+@import 'cmps/footer';
+@import 'cmps/main-nav';
+
+//HOME PAGE
+@import 'cmps/HomePage/hero';
+@import 'cmps/HomePage/introduction';
+@import 'cmps/HomePage/what-we-make';
+@import 'cmps/HomePage/on-time';
+@import 'cmps/HomePage/our-gallery';
+
+// ABOUT PAGE
+@import 'cmps/AboutPage/we-guide';
+@import 'cmps/AboutPage/our-mission';
+@import 'cmps/AboutPage/our-story';
+
+// OFFICE PAGE
+@import 'cmps/OfficePage/dental-tech';
+
+// SERVICES PAGE
+@import 'cmps/ServicesPage/full-service';
+@import 'cmps/ServicesPage/service-preview';

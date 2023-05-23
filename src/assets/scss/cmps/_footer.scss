@@ -1,0 +1,35 @@
+.footer-container {
+  background-color: $clr2;
+  text-align: center;
+  padding: 5% 0%;
+  ul {
+    display: flex;
+    gap: 20px;
+    color: $clr5;
+    justify-content: center;
+    li {
+        letter-spacing: 2px;
+        font-size: rem(13px);
+        font-weight: 900;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: $clr3;
+      }
+    }
+  }
+  img {
+    width: 260px;
+    margin-bottom: 20px;
+  }
+  h5 {
+    color: #2b95b6;
+    font-weight: 800;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 1.7em;
+    letter-spacing: 5px;
+    color: $clr3;
+  }
+}

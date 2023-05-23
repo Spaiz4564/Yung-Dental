@@ -1,0 +1,13 @@
+.service-preview-container {
+  h4 {
+    color: #fff;
+    font-size: rem(18px);
+    font-weight: 400;
+  }
+  .service-img {
+    width: 100%;
+    margin-bottom: 20px;
+    filter: brightness(94%) contrast(118%) saturate(1%) blur(0px)
+      hue-rotate(0deg);
+  }
+}
