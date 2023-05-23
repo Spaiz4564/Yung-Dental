@@ -4,6 +4,9 @@
     max-width: 963px;
     margin: auto;
     margin-bottom: 150px;
+    @include for-wide-layout{
+     margin-bottom: 0px;
+    }
     padding: 80px 0px;
     text-align: center;
 

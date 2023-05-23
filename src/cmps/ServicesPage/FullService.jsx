@@ -9,8 +9,8 @@ export default function FullService() {
       <div className='full-service-container'>
         <h1 className='yung-h1'>Full-Service Dental Lab</h1>
         <div className='services'>
-          {services.map(service => (
-            <ServicePreview service={service} />
+          {services.map((service, i) => (
+            <ServicePreview key={i} service={service} />
           ))}
         </div>
       </div>

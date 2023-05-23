@@ -19,6 +19,9 @@
     }
     .intro-welcome {
       padding: 165px 100px;
+      @include for-wide-layout {
+        padding: 70px 50px;
+      }
       width: 50%;
     }
   }
@@ -28,6 +31,9 @@
     }
     .intro-products {
       padding: 165px 100px;
+      @include for-wide-layout {
+        padding: 120px 50px;
+      }
     }
     background-color: $clr8;
   }
@@ -72,9 +78,9 @@
 
   button {
     background-color: $clr3;
-    &:hover{
+    &:hover {
       color: $clr3;
-    background-color: $clr1;
+      background-color: $clr1;
     }
   }
 }

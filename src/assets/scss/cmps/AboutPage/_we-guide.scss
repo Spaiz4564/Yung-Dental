@@ -1,6 +1,9 @@
 .we-guide-section {
   position: relative;
   margin-bottom: 150px;
+  @include for-wide-layout{
+  margin-bottom: 70px ;
+  }
   .we-guide-container {
     p,
     h2 {

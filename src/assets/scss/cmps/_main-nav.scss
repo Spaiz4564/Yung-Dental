@@ -1,5 +1,8 @@
 .header-container {
   height: 190px;
+  @include for-wide-layout {
+    height: 160px;
+  }
   min-height: 17.5vh;
 }
 
@@ -9,13 +12,19 @@ header {
   width: 100%;
   z-index: 200;
   height: 190px;
+  @include for-wide-layout {
+    height: 160px;
+  }
 }
 
-.active{
+.active {
   color: $clr3 !important;
 }
 
 .main-nav {
+  @include for-wide-layout{
+    padding: 15px;
+  }
   a {
     display: contents;
     color: inherit;
@@ -36,6 +45,9 @@ header {
 
 nav {
   padding-right: 30px;
+  @include for-wide-layout{
+  padding-right: 0px;
+  }
   background-color: $clr2;
   .nav-sections {
     justify-content: flex-end;

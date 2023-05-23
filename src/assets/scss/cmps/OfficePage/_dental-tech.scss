@@ -1,5 +1,8 @@
 .dental-tech-section {
     margin-bottom: 150px;
+    @include for-wide-layout{
+    margin-bottom: 0px;
+    }
   .dental-tech-container {
     text-align: center;
     h1,p{
@@ -7,12 +10,22 @@
     }
     display: flex;
     .dental {
+      @include for-wide-layout{
+        p{
+          font-size: 0.99em;
+        }
+      }
       background-color: $clr2;
       width: 33.333%;
       padding: 6.5%;
     }
 
     .tech {
+      @include for-wide-layout{
+        p{
+          font-size: 0.99em;
+        }
+      }
       padding: 6.5%;
       background-color: $clr2;
       width: 33.333%;

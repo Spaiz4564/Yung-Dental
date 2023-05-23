@@ -1,5 +1,8 @@
 .on-time-section {
   margin-bottom: 150px;
+  @include for-wide-layout{
+   margin: 0;
+  }
 }
 
 .on-time-container {
@@ -27,6 +30,9 @@
     flex-direction: column;
     justify-content: center;
     padding: 10%;
+    @include for-wide-layout {
+      padding: 6%;
+    }
     h2 {
       color: $clr3;
       font-weight: 800;
