@@ -5,6 +5,7 @@
   }
   @include for-mobile-layout {
     height: 120px;
+    min-height: auto;
   }
   min-height: 17.5vh;
 }
