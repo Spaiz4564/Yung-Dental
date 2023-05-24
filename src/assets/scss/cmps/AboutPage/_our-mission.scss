@@ -4,6 +4,9 @@
     max-width: 963px;
     margin: auto;
     margin-bottom: 150px;
+    @include for-tablet-layout{
+      padding: 50px 50px;
+    }
     @include for-wide-layout{
      margin-bottom: 0px;
     }

@@ -19,7 +19,7 @@ export default function Reusable1({ info }) {
     if (!isOffice && !isServices) {
       return (
         <div className='on-time-container'>
-          <div className='on-time'>
+          <div className='on-time second-on-time'>
             <div className='on-time-info'>
               <h2>{subTitle2}</h2>
               <h1>{title2}</h1>

@@ -1,7 +1,7 @@
 .on-time-section {
   margin-bottom: 150px;
-  @include for-wide-layout{
-   margin: 0;
+  @include for-wide-layout {
+    margin: 0;
   }
 }
 
@@ -11,13 +11,27 @@
   background-color: $clr8;
 }
 
+.second-on-time {
+  @include for-tablet-layout {
+    flex-direction: column-reverse !important;
+  }
+}
+
 .on-time {
   display: flex;
+  @include for-tablet-layout {
+    flex-direction: column;
+  }
   img {
     filter: grayscale(0.4);
     min-height: 700px;
     max-height: 700px;
     width: 50%;
+    @include for-tablet-layout {
+      width: auto;
+      min-height:auto;
+      height: 320px;
+    }
     background-image: linear-gradient(180deg, #fff 0%, #000 100%);
     opacity: 0.9;
   }
@@ -27,11 +41,17 @@
     gap: 15px;
     text-align: center;
     width: 50%;
+    @include for-tablet-layout {
+      width: auto;
+    }
     flex-direction: column;
     justify-content: center;
     padding: 10%;
     @include for-wide-layout {
       padding: 6%;
+    }
+    @include for-tablet-layout {
+      padding: 8%;
     }
     h2 {
       color: $clr3;

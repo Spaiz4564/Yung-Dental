@@ -1,0 +1,28 @@
+.side-menu-modal {
+  transition: all 0.5s;
+  background-color: #121212;
+  height: 0px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  ul {
+    width: 100%;
+    li {
+      color: $clr1;
+      padding: 10px;
+      letter-spacing: 1.8px;
+    }
+  }
+}
+
+.height {
+  height: 180px;
+}
+
+.clicked {
+  background-color: #b0976d;
+}

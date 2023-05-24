@@ -9,6 +9,9 @@
     @include for-wide-layout{
       padding-bottom: 70px;
     }
+    @include for-tablet-layout{
+      flex-direction: column;
+    }
   }
 }
 
@@ -16,6 +19,12 @@
   display: flex;
   justify-content: space-between;
   padding: 150px 0px 0px 0px;
+  @include for-tablet-layout{
+    padding-top: 80px;
+  }
+  @include for-tablet-layout{
+    flex-direction: column-reverse;
+   }
   .products-container {
     .products {
       ul {
@@ -63,6 +72,13 @@
       padding: 5% 0% 0% 5%;
       height: 500px;
     }
+    @include for-tablet-layout{
+      padding: 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
     padding: 8%;
     background-color: $clr1;
   }
@@ -80,8 +96,11 @@
     .num-wrapper {
       width: 33.3%;
       span {
-        @include for-normal-layout {
+        @include for-wide-layout {
           font-size: 2em;
+        }
+        @include for-tablet-layout{
+          font-size: 40px;
         }
         font-size: rem(70px);
         color: $clr4;
@@ -93,6 +112,9 @@
     }
     display: flex;
     justify-content: center;
+  }
+  @include for-tablet-layout{
+    margin-bottom: 35px;
   }
 }
 

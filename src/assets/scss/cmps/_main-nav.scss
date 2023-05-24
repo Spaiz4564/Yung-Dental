@@ -22,8 +22,11 @@ header {
 }
 
 .main-nav {
-  @include for-wide-layout{
+  @include for-wide-layout {
     padding: 15px;
+  }
+  @include for-tablet-layout {
+    padding: 15px 30px;
   }
   a {
     display: contents;
@@ -40,13 +43,23 @@ header {
   img {
     cursor: pointer;
     width: 18.9%;
+    @include for-tablet-layout {
+      width: 28.9%;
+    }
+  }
+  .menu-bar {
+    color: $clr1;
+    font-size: rem(25px);
   }
 }
 
 nav {
   padding-right: 30px;
-  @include for-wide-layout{
-  padding-right: 0px;
+  @include for-wide-layout {
+    padding-right: 0px;
+  }
+  @include for-tablet-layout {
+    display: none;
   }
   background-color: $clr2;
   .nav-sections {
