@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/Yung-Dental/static/css/main.b0858321.css",
-    "main.js": "/Yung-Dental/static/js/main.11401b66.js",
+    "main.css": "/Yung-Dental/static/css/main.649e3803.css",
+    "main.js": "/Yung-Dental/static/js/main.24fea172.js",
     "static/js/787.28cb0dcd.chunk.js": "/Yung-Dental/static/js/787.28cb0dcd.chunk.js",
     "static/media/office1.png": "/Yung-Dental/static/media/office1.3e75a4212a2f1223cc35.png",
+    "static/media/black-logo.png": "/Yung-Dental/static/media/black-logo.d3170b4fe15ebe2fd342.png",
     "static/media/logo.png": "/Yung-Dental/static/media/logo.cce1ce7aeda2797de644.png",
     "static/media/office2.webp": "/Yung-Dental/static/media/office2.dce7449e43facba0f069.webp",
     "static/media/office3.webp": "/Yung-Dental/static/media/office3.77856f0ed215adae89d5.webp",
     "index.html": "/Yung-Dental/index.html",
-    "main.b0858321.css.map": "/Yung-Dental/static/css/main.b0858321.css.map",
-    "main.11401b66.js.map": "/Yung-Dental/static/js/main.11401b66.js.map",
+    "main.649e3803.css.map": "/Yung-Dental/static/css/main.649e3803.css.map",
+    "main.24fea172.js.map": "/Yung-Dental/static/js/main.24fea172.js.map",
     "787.28cb0dcd.chunk.js.map": "/Yung-Dental/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0858321.css",
-    "static/js/main.11401b66.js"
+    "static/css/main.649e3803.css",
+    "static/js/main.24fea172.js"
   ]
 }
