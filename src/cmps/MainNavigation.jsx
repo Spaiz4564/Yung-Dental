@@ -23,7 +23,7 @@ export default function MainNavigation() {
 
   function handleClickOutside(event) {
     if (sideNavRef.current && !sideNavRef.current.contains(event.target)) {
-      sideMenuHandler()
+      setMenuIcon(false)
     }
   }
 

@@ -4,13 +4,19 @@
   @include for-wide-layout {
     margin-bottom: 80px;
   }
+  @include for-mobile-layout{
+    margin-bottom: 45px;
+  }
   .nopadding {
     padding: 0;
-    @include for-wide-layout{
+    @include for-wide-layout {
       padding-bottom: 70px;
     }
-    @include for-tablet-layout{
+    @include for-tablet-layout {
       flex-direction: column;
+    }
+    @include for-mobile-layout{
+      padding-bottom: 0px;
     }
   }
 }
@@ -19,12 +25,13 @@
   display: flex;
   justify-content: space-between;
   padding: 150px 0px 0px 0px;
-  @include for-tablet-layout{
+  @include for-tablet-layout {
     padding-top: 80px;
-  }
-  @include for-tablet-layout{
     flex-direction: column-reverse;
-   }
+  }
+  @include for-mobile-layout {
+    padding-top: 50px;
+  }
   .products-container {
     .products {
       ul {
@@ -63,8 +70,11 @@
 
     height: 615px;
     &.height {
-      @include for-wide-layout{
+      @include for-wide-layout {
         height: 600px;
+      }
+      @include for-mobile-layout{
+        height: 450px;
       }
       height: 640px;
     }
@@ -72,13 +82,17 @@
       padding: 5% 0% 0% 5%;
       height: 500px;
     }
-    @include for-tablet-layout{
+    @include for-tablet-layout {
       padding: 8%;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    
+    @include for-mobile-layout {
+      margin-bottom: 40px;
+      height: 470px;
+    }
+
     padding: 8%;
     background-color: $clr1;
   }
@@ -88,9 +102,19 @@
   padding-right: rem(35px);
   width: 100%;
   text-align: center;
+  @include for-tablet-layout {
+    margin-bottom: 35px;
+  }
+  @include for-mobile-layout {
+    padding-right: 0px;
+    margin-bottom: 45px;
+  }
   img {
     margin-bottom: 40px;
     width: 600px;
+    @include for-mobile-layout {
+      width: 315px;
+    }
   }
   .what-made {
     .num-wrapper {
@@ -99,22 +123,31 @@
         @include for-wide-layout {
           font-size: 2em;
         }
-        @include for-tablet-layout{
+        @include for-tablet-layout {
           font-size: 40px;
         }
+        @include for-mobile-layout {
+          font-size: 30px;
+        }
+
         font-size: rem(70px);
         color: $clr4;
         font-weight: 300;
       }
       h3 {
         font-weight: 400;
+        @include for-mobile-layout {
+          font-size: 15px;
+        }
       }
+    }
+    @include for-mobile-layout {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
     }
     display: flex;
     justify-content: center;
-  }
-  @include for-tablet-layout{
-    margin-bottom: 35px;
   }
 }
 

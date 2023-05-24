@@ -4,6 +4,10 @@
     padding: 80px 0px;
     max-width: 600px;
     margin: 80px auto 0px auto;
+    @include for-mobile-layout{
+      margin-top: 40px;
+      padding: 40px;
+    }
     h4 {
       font-size: rem(27px);
       margin-bottom: 20px;

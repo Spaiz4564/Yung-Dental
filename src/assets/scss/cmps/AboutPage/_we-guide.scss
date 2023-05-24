@@ -1,8 +1,11 @@
 .we-guide-section {
   position: relative;
   margin-bottom: 150px;
-  @include for-wide-layout{
-  margin-bottom: 70px ;
+  @include for-wide-layout {
+    margin-bottom: 70px;
+  }
+  @include for-mobile-layout {
+    margin-bottom: 45px;
   }
   .we-guide-container {
     p,
@@ -13,6 +16,9 @@
     h1 {
       color: $clr1;
       font-size: rem(45px);
+      @include for-mobile-layout {
+        font-size: rem(43px);
+      }
     }
 
     display: flex;
@@ -23,6 +29,9 @@
     margin: auto;
     min-height: 60vh;
     text-align: center;
+    @include for-mobile-layout {
+      padding: 40px;
+    }
   }
   .we-guide-background {
     background-attachment: fixed;

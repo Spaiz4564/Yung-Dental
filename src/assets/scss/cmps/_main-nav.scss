@@ -3,6 +3,9 @@
   @include for-wide-layout {
     height: 160px;
   }
+  @include for-mobile-layout {
+    height: 120px;
+  }
   min-height: 17.5vh;
 }
 
@@ -14,6 +17,9 @@ header {
   height: 190px;
   @include for-wide-layout {
     height: 160px;
+  }
+  @include for-mobile-layout {
+    height: 120px;
   }
 }
 
@@ -45,6 +51,9 @@ header {
     width: 18.9%;
     @include for-tablet-layout {
       width: 28.9%;
+    }
+    @include for-mobile-layout{
+    width: 43%;
     }
   }
   .menu-bar {
