@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactReuse from '../Reusable/ContactReuse'
+import { Link } from 'react-router-dom'
 
 const homeContact = {
   h1: 'Get High-Quality Dental Equipment Today',
@@ -48,7 +49,9 @@ export default function Introduction() {
               digitally design and manufactured, rest assured that all materials
               are FDA and ADA approved and/or assured.
             </p>
-            <button className='button'>View All</button>
+            <Link to='/services'>
+              <button className='button'>View All</button>
+            </Link>
           </div>
         </div>
       </div>

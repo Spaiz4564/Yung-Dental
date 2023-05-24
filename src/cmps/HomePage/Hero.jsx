@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Hero() {
   return (
@@ -13,7 +14,9 @@ export default function Hero() {
             Each appliance is individually quality checked by our CDT to ensure
             quality standards.
           </h3>
-          <button className='button'>CONTACT US</button>
+          <Link to='/contact'>
+            <button className='button'>CONTACT US</button>
+          </Link>
         </div>
         <div className='background-wrapper'></div>
       </div>

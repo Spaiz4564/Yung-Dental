@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { whatWeMakeHandler } from '../../services/app-service'
+import { Link } from 'react-router-dom'
 
 export default function WhatWeMake() {
   const { ref: myRef1, inView: elementVisible1 } = useInView(false)
@@ -62,7 +63,10 @@ export default function WhatWeMake() {
                   <span>Bridges</span>
                 </li>
               </ul>
-              <button className='button'>View All</button>
+
+              <Link to='/services'>
+                <button className='button'>View All</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -85,7 +89,9 @@ export default function WhatWeMake() {
                   <span>Tools</span>
                 </li>
               </ul>
-              <button className='button'>View All</button>
+              <Link to='/services'>
+                <button className='button'>View All</button>
+              </Link>
             </div>
           </div>
           <div className='what-made-container'>

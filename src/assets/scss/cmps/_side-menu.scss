@@ -19,6 +19,16 @@
   }
 }
 
+.menu-bar{
+  display: none;
+  @include for-mobile-layout{
+    display: block;
+  }
+  @include for-tablet-layout{
+    display: block;
+  }
+}
+
 .height {
   height: 180px;
 }

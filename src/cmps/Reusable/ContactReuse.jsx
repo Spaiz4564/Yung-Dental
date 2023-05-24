@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ContactReuse({ info }) {
   const { h1, isOffice } = info
@@ -8,7 +9,10 @@ export default function ContactReuse({ info }) {
       className='reuse-contact'
     >
       <h1>{h1}</h1>
-      <button className='button'>Contact Us</button>
+
+      <Link to='/contact'>
+        <button className='button'>Contact Us</button>
+      </Link>
     </div>
   )
 }

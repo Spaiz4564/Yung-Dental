@@ -1,18 +1,25 @@
 import React from 'react'
 import logo from '../assets/img/logo.png'
+import { getSections } from '../services/app-service'
+import { NavLink, Link } from 'react-router-dom'
 
 export default function Footer() {
+  const sections = getSections()
   return (
     <footer>
       <div className='footer-container'>
         <h5>EXCELLENCE IN CARE</h5>
-        <img src={logo} alt='' />
+        <Link to='/'>
+          <img src={logo} alt='' />
+        </Link>
+
         <div className='footer-nav'>
           <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>SERVICES</li>
-            <li>CONTACT</li>
+            {sections.map(section => (
+              <NavLink key={section} to={`/${section.toLowerCase()}`}>
+                <li>{section}</li>
+              </NavLink>
+            ))}
           </ul>
         </div>
       </div>
