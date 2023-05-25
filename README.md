@@ -4,7 +4,7 @@
 
 ## 📖 Description
 
-Website of a fictional Dental Laboratory called "Omnifood".
+Website of a fictional Dental Laboratory called "Yung Dental".
 
 ## ✨ Features
 
